@@ -1,0 +1,227 @@
+:root {
+    --Dark-color: #19283f;
+    --Red-color: #ff3150;
+    --Yellow-color: #ffc400;
+    --Green-color: #33d1cc;
+    --Section-color: #eff7fa;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+    background-color: var(--Red-color);
+    color: var(--Yellow-color);
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+    background-color: var(--Red-color);
+    color: var(--Yellow-color);
+}
+
+.navbar {
+    background-color: var(--Dark-color);
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+    color: var(--Green-color);
+}
+
+.collapse .search {
+    color: var(--Green-color);
+    border-left: 2px solid var(--Green-color);
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.collapse .search svg {
+    cursor: pointer;
+}
+
+.navbar .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .btn {
+    background-color: var(--Red-color);
+    color: var(--Yellow-color);
+}
+
+.navbar .btn:focus {
+    box-shadow: none;
+}
+
+.landing {
+    background-color: var(--Dark-color);
+    height: calc(100vh - 72px);
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    background-color: var(--Green-color);
+    height: 2px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.feat .icon-holder {
+    height: 200px;
+}
+
+.feat svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.number {
+    font-size: 12rem;
+    color: var(--Section-color);
+    bottom: -10px;
+}
+
+.icon {
+    color: var(--Green-color);
+    font-size: 4rem;
+}
+
+.feat h3 {
+    color: var(--Yellow-color);
+}
+
+.our-work {
+    background-color: var(--Section-color);
+}
+
+.our-work ul li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.our-work ul li.active {
+    background-color: var(--Red-color);
+    color: var(--Yellow-color);
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--Red-color);
+}
+
+.box {
+    padding: 5px;
+}
+
+.box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: #33d1cc99;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Section-color);
+    font-weight: bold;
+    transition: 0.3s;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.box:hover::before {
+    transform: translateX(0);
+}
+
+.m-p {
+    max-width: 570px;
+}
+
+.meet-team {
+    background-color: var(--Section-color);
+}
+
+.head-team {
+    color: var(--Yellow-color);
+}
+
+.p-team {
+    max-width: 950px;
+}
+
+.name {
+    background-color: var(--Green-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.sp {
+    background-color: var(--Dark-color);
+}
+
+.subscibe {
+    background-color: var(--Yellow-color);
+}
+
+.subscibe input[type="email"] {
+    border: none;
+    border-bottom: #fff 1px solid;
+}
+
+.subscibe input[type="email"]:focus {
+    outline: none;
+}
+
+.subscibe input[type="email"]::placeholder {
+    color: #fff;
+}
+
+.subscibe input[type="submit"] {
+    background-color: var(--Dark-color);
+}
+
+.footer {
+    background-color: var(--Dark-color);
+}
+
+.copyright>span {
+    color: var(--Green-color);
+}
+
+.copyright div span {
+    color: var(--Yellow-color);
+}
+
+.footer input[type="submit"] {
+    background-color: var(--Red-color);
+
+}
+
+.facebook {
+    background-color: #1877f2;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.google {
+    background-color: #dd4b39;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
